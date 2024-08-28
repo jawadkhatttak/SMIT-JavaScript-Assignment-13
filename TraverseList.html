@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+</head>
+<body>
+    <ul>
+        <li id="myList">Home</li>
+        <li id="myList">About</li>
+        <li id="myList">Contact Us</li>
+    </ul>
+    <script>
+        let lis = document.querySelectorAll('#myList')
+        lis.forEach(element => {
+            console.log(element.textContent)
+        });
+    </script>
+</body>
+</html>

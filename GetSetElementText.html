@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get And Set</title>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, fuga.</p>
+    <script>
+        let para = document.querySelector('#para')
+        let div = document.createElement('div')
+        div.textContent = "This is Just Printed Code: " + para.textContent
+        document.body.appendChild(div)
+
+        let div1 = document.createElement('div')
+        div1.innerHTML = "<br>New Text"
+        document.body.appendChild(div1)
+
+        // console.log(para.textContent)
+    </script>
+</body>
+</html>
